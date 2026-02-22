@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Linux boot methods - Garfield's wiki</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Linux boot methods";
+        var mkdocs_page_input_path = "Linux/GeneralLinux/Linux_Boot_Methods.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Garfield's wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home Lab Network Topology</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Hack</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Hack/CTF_Resource/">CTF Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Hack/OSINT_Resource/">OSINT Resource</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Hack/Vulnerability_Resource/">Vulnerability Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Hack/common_command/">Common COmmands</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Hack/exploit_tools/">Exploit tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Hack/information_gathering/">Information gathering</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Linux</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" >GeneralLinux</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Linux boot methods</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#sysvinit-method">SysVinit Method</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#runlevels-in-linux">Runlevels in Linux</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#systemd-method">Systemd Method</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#systemctl-commands">Systemctl Commands</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Linux_Commands/">Linux Commands</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Linux_Directory/">Linux Directory</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Linux_Network_Configuration_Files/">Linux Network Configuration Files</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Linux_OS_Setup/">Linux OS Setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Linux_Programming/">linux programming</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Linux_Scheduling/">Linux Scheduling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Linux_Security/">Linux security</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Linux_Shell_Scripting/">Linux shell scripting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Linux_User_Environment/">Linux User Environment</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VIM_Editor_Commands/">VIM editor commands</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../kernel_parameters/">Kernel Parameters</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >LinuxServers</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../LinuxServers/Database_Servers/">Database Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../LinuxServers/File_Servers/">File Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../LinuxServers/Mail_Servers/">Mail Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../LinuxServers/Printing_Server/">Install HP print</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../LinuxServers/Web_Servers/">Webserver</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Networking</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Networking/Mobile_Device_Management/">Mobile Device Management</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Networking/VM_Server/">VM Server</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Networking/ports_and_protocols/">Ports &amp; Protocols</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Networking/vpnserver/">VPN Server</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Security</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Concepts</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Security/Concepts/cyber_kill_chain/">Cyber Kill Chain</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Security/Concepts/defensive_security/">Defensive Security</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Security/Concepts/goverance_and_regulation/">Goverance and Regulation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Security/Concepts/security_principles/">Security Principles</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >WebApplication</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Security/Concepts/WebApplication/Web_Large_Language_Models/">Web Large Language Models</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Security/Concepts/WebApplication/Websocket/">Websocket</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Security/Concepts/WebApplication/api_testing/">API Testing</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Security/Concepts/WebApplication/path_traversal/">Path Traversal</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Security/Concepts/WebApplication/web_training/">Web Application Training (Port Swinger)</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Defense</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Security/Defense/tshark/">Tshark</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Windows Server</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Windows%20Server/Active_Directory/">Active Directory</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Windows%20Server/Configure_Microsoft_Entra_ID/">Configure Microsoft Entra ID</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Windows%20Server/Identity_Management/">Create, Configure, and manage identies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Windows%20Server/Microsoft_Entra_Identity/">Microsoft Entra Identity</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Garfield's wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Linux</li>
+          <li class="breadcrumb-item">GeneralLinux</li>
+      <li class="breadcrumb-item active">Linux boot methods</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="linux-boot-methods">Linux boot methods</h1>
+<h2 id="sysvinit-method">SysVinit Method</h2>
+<ul>
+<li>/etc/inittab: File that specifies which processes to start at different runlevels.</li>
+<li>/etc/init.d: Directory and subdirectors (begin with rc)</li>
+</ul>
+<h3 id="runlevels-in-linux">Runlevels in Linux</h3>
+<table>
+<thead>
+<tr>
+<th>Runlevel</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Shut down the system</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Runs in single-user stand-alone mode (No one else can log in; you work at the text console)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Runs in multiuser mode (Debian and Ubuntu use runlevel 2 as the default runlevel)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Runs in full multiuser mode (for text-mode login in Fedora and SUSE)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Run in full multiuser mode (unused in Fedora and SUSE)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Run in full multiuser mode (the default runlevel with graphical login in Fedora and SUSE)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Reboot the system</td>
+</tr>
+</tbody>
+</table>
+<h4 id="current-run-level">Current run level</h4>
+<pre><code>/sbin/runlevel
+
+</code></pre>
+<h4 id="fields-in-inittab-entry">Fields in inittab entry</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>A unique one-or two-character. The init process uses this field internally. You can use any identifier you want as long as you don't use the same identifier on more than one line</td>
+</tr>
+<tr>
+<td>runlevels</td>
+<td>A sequence of zero or more characters, each denoting a runlevel. For example, if the runlevel is 12345, that entry applies to each of the runlevels (1 through 5). This field is ignored if the action field is set to sysinit, boot, or bootwait</td>
+</tr>
+<tr>
+<td>action</td>
+<td>What the init process will do with this entry. If this field is initdefault, for example, init itnerprets the runlevels field as the default runlevel. If this field is set to wait, init starts the program or script specified in the process field and waits until that process exists</td>
+</tr>
+<tr>
+<td>process</td>
+<td>Name of the script or program that init starts. Some settings of the action field require no process field. When the action field is initdefault, for example, there's no need for a process field</td>
+</tr>
+</tbody>
+</table>
+<h4 id="automatically-starting-services">Automatically starting services</h4>
+<pre><code>chkconfig --level 345 sshd on
+
+chkconfig --list
+
+</code></pre>
+<h2 id="systemd-method">Systemd Method</h2>
+<ul>
+<li>/usr/lib/systemd/system: Folder thar stores unit configuration files</li>
+</ul>
+<h3 id="systemctl-commands">Systemctl Commands</h3>
+<table>
+<thead>
+<tr>
+<th>Command name</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>get-default</td>
+<td>Displays the default target configured for the system</td>
+</tr>
+<tr>
+<td>list-units</td>
+<td>Displays the current status of all configured units</td>
+</tr>
+<tr>
+<td>default name</td>
+<td>Changes to the default target unit</td>
+</tr>
+<tr>
+<td>isolate name</td>
+<td>Starts the named unit and stops all others</td>
+</tr>
+<tr>
+<td>start name</td>
+<td>Starts the named unit</td>
+</tr>
+<tr>
+<td>stop name</td>
+<td>Stop the named unit</td>
+</tr>
+<tr>
+<td>reload name</td>
+<td>Causes the named unit to reload its configruation file</td>
+</tr>
+<tr>
+<td>restart name</td>
+<td>Causes the named unit to shut down and restart</td>
+</tr>
+<tr>
+<td>status name</td>
+<td>Displays the status of the named unit (You can pass a PID value rather than a name, if you like)</td>
+</tr>
+<tr>
+<td>enable name</td>
+<td>Cofigures the unit to start when the computer next boots</td>
+</tr>
+<tr>
+<td>disable name</td>
+<td>Confiures the unit to not start when the computer next boots</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../../Hack/information_gathering/" class="btn btn-neutral float-left" title="Information gathering"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Linux_Commands/" class="btn btn-neutral float-right" title="Linux Commands">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../../Hack/information_gathering/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Linux_Commands/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

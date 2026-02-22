@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Ports &amp; Protocols - Garfield's wiki</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Ports \u0026amp; Protocols";
+        var mkdocs_page_input_path = "Networking/ports_and_protocols.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Garfield's wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home Lab Network Topology</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Hack</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Hack/CTF_Resource/">CTF Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Hack/OSINT_Resource/">OSINT Resource</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Hack/Vulnerability_Resource/">Vulnerability Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Hack/common_command/">Common COmmands</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Hack/exploit_tools/">Exploit tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Hack/information_gathering/">Information gathering</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Linux</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >GeneralLinux</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/Linux_Boot_Methods/">Linux boot methods</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/Linux_Commands/">Linux Commands</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/Linux_Directory/">Linux Directory</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/Linux_Network_Configuration_Files/">Linux Network Configuration Files</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/Linux_OS_Setup/">Linux OS Setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/Linux_Programming/">linux programming</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/Linux_Scheduling/">Linux Scheduling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/Linux_Security/">Linux security</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/Linux_Shell_Scripting/">Linux shell scripting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/Linux_User_Environment/">Linux User Environment</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/VIM_Editor_Commands/">VIM editor commands</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/kernel_parameters/">Kernel Parameters</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >LinuxServers</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/LinuxServers/Database_Servers/">Database Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/LinuxServers/File_Servers/">File Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/LinuxServers/Mail_Servers/">Mail Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/LinuxServers/Printing_Server/">Install HP print</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/LinuxServers/Web_Servers/">Webserver</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Networking</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../Mobile_Device_Management/">Mobile Device Management</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../VM_Server/">VM Server</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Ports &amp; Protocols</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#well-known-ports">Well Known Ports</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#common-unix-printing-system-cups">Common Unix Printing System (CUPS)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#network-file-share-nfs">Network File Share (NFS)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#samba">Samba</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dynamic-host-configuration-protocol-dhcp">Dynamic Host Configuration Protocol (DHCP)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#logging">Logging</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#domain-name-service-dns">Domain Name Service (DNS)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#simple-network-management-protocol-snmp">Simple Network Management Protocol (SNMP)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#network-time-protocol-ntp">Network Time Protocol (NTP)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#network-information-system-nis">Network Information System (NIS)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#kerberos">Kerberos</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lightweight-directory-access-protocol-ldap">Lightweight Directory Access Protocol (LDAP)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#certificate-authorities-ca">Certificate Authorities (CA)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#secure-socket-shell-ssh">Secure Socket Shell (SSH)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#network-news-transfer-protocol-nntp">Network News Transfer Protocol (NNTP)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#telnet">Telnet</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#file-transfer-protocol-ftp">File Transfer Protocol (FTP)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#trivial-file-transfer-protocool-tftp">Trivial File Transfer Protocool (TFTP)</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../vpnserver/">VPN Server</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Security</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Concepts</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Security/Concepts/cyber_kill_chain/">Cyber Kill Chain</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Security/Concepts/defensive_security/">Defensive Security</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Security/Concepts/goverance_and_regulation/">Goverance and Regulation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Security/Concepts/security_principles/">Security Principles</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >WebApplication</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../Security/Concepts/WebApplication/Web_Large_Language_Models/">Web Large Language Models</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Security/Concepts/WebApplication/Websocket/">Websocket</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Security/Concepts/WebApplication/api_testing/">API Testing</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Security/Concepts/WebApplication/path_traversal/">Path Traversal</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Security/Concepts/WebApplication/web_training/">Web Application Training (Port Swinger)</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Defense</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Security/Defense/tshark/">Tshark</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Windows Server</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Windows%20Server/Active_Directory/">Active Directory</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Windows%20Server/Configure_Microsoft_Entra_ID/">Configure Microsoft Entra ID</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Windows%20Server/Identity_Management/">Create, Configure, and manage identies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Windows%20Server/Microsoft_Entra_Identity/">Microsoft Entra Identity</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Garfield's wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Networking</li>
+      <li class="breadcrumb-item active">Ports &amp; Protocols</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ports-protocols">Ports &amp; Protocols</h1>
+<ul>
+<li>Located in /etc/services</li>
+<li><a href="#logging">Logging types</a></li>
+<li><a href="#certificate-authorities-ca">Certficate Authorities</a></li>
+</ul>
+<h2 id="well-known-ports">Well Known Ports</h2>
+<table>
+<thead>
+<tr>
+<th>Port</th>
+<th>Protocol</th>
+<th>Info</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20 &amp; 21</td>
+<td>FTP</td>
+<td><a href="#file-transfer-protocol-ftp">More Info</a></td>
+</tr>
+<tr>
+<td>22</td>
+<td>SSH</td>
+<td><a href="#secure-socket-shell-ssh">More Info</a></td>
+</tr>
+<tr>
+<td>23</td>
+<td>Telnet</td>
+<td><a href="#telnet">More Info</a></td>
+</tr>
+<tr>
+<td>25</td>
+<td>SMTP</td>
+<td><a href="./mailservers.md">More Info</a></td>
+</tr>
+<tr>
+<td>53</td>
+<td>DNS</td>
+<td><a href="#domain-name-service-dns">More Info</a></td>
+</tr>
+<tr>
+<td>67</td>
+<td>DHCP</td>
+<td><a href="#dynamic-host-configuration-protocol-dhcp">More Info</a></td>
+</tr>
+<tr>
+<td>69</td>
+<td>TFTP</td>
+<td><a href="#trivial-file-transfer-protocool-tftp">More Info</a></td>
+</tr>
+<tr>
+<td>80</td>
+<td>HTTP</td>
+<td><a href="./webservers.md">More Info</a></td>
+</tr>
+<tr>
+<td>88</td>
+<td>Kerberos</td>
+<td><a href="#kerberos">More Info</a></td>
+</tr>
+<tr>
+<td>109 &amp; 110</td>
+<td>POP</td>
+<td><a href="./mailservers.md">More Info</a></td>
+</tr>
+<tr>
+<td>119</td>
+<td>NNTP</td>
+<td><a href="#network-news-transfer-protocol-nntp">More Info</a></td>
+</tr>
+<tr>
+<td>123</td>
+<td>NTP</td>
+<td><a href="#network-time-protocol-ntp">More Info</a></td>
+</tr>
+<tr>
+<td>137 - 139</td>
+<td>SMB</td>
+<td><a href="#samba">More Info</a></td>
+</tr>
+<tr>
+<td>143 &amp; 220</td>
+<td>IMAP</td>
+<td><a href="./mailservers.md">More Info</a></td>
+</tr>
+<tr>
+<td>161 &amp; 162</td>
+<td>SNMP</td>
+<td><a href="#simple-network-management-protocol-snmp">More Info</a></td>
+</tr>
+<tr>
+<td>389</td>
+<td>LDAP</td>
+<td><a href="#lightweight-directory-access-protocol-ldap">More Info</a></td>
+</tr>
+<tr>
+<td>443</td>
+<td>HTTPS</td>
+<td><a href="./webservers.md">More Info</a></td>
+</tr>
+<tr>
+<td>465</td>
+<td>Rendezvous DIrectory Service Cisco</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>514</td>
+<td>NIS</td>
+<td><a href="#network-information-system-nis">More Info</a></td>
+</tr>
+<tr>
+<td>631</td>
+<td>IPP</td>
+<td><a href="#common-unix-printing-system-cups">More Info</a></td>
+</tr>
+<tr>
+<td>993</td>
+<td>IMAP SSL/TLS</td>
+<td><a href="./mailservers.md">More Info</a></td>
+</tr>
+<tr>
+<td>995</td>
+<td>POP SSL/TLS</td>
+<td><a href="./mailservers.md">More Info</a></td>
+</tr>
+<tr>
+<td>3306</td>
+<td>MYSQL</td>
+<td><a href="./database.md">More Info</a></td>
+</tr>
+<tr>
+<td>2049 or 111</td>
+<td>NFS</td>
+<td><a href="#network-file-share-nfs">More Info</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="common-unix-printing-system-cups">Common Unix Printing System (CUPS)</h2>
+<p>CUPS uses Internet Printing Protocol (IPP) allows you to share local prints with other linux systems and share among users</p>
+<h2 id="network-file-share-nfs">Network File Share (NFS)</h2>
+<p>nfs-utils provides both the drivers to support NFS and the client and server to share folders.</p>
+<h2 id="samba">Samba</h2>
+<p>Windows is the System Message Block (SMB). Samba software package to allow Linux to interact with Window clients and servers. NetBIOS windows networking and uses several ports for the session</p>
+<h2 id="dynamic-host-configuration-protocol-dhcp">Dynamic Host Configuration Protocol (DHCP)</h2>
+<p>Most popular DHCP server package is called DHCPd (Internet Systems Consortium (ISC)). Packages: dhclient, dhcpd, pump</p>
+<h2 id="logging">Logging</h2>
+<p>Two main logging systems. rsyslogd (accepts logging data from remote servers) used by SysVinit and Upstart systems. jurnald (systemd system for local and remote logging of system information)</p>
+<h2 id="domain-name-service-dns">Domain Name Service (DNS)</h2>
+<p>Linux servers use BIND software package to provide DNS naming services</p>
+<h2 id="simple-network-management-protocol-snmp">Simple Network Management Protocol (SNMP)</h2>
+<p>A way for admins to query remote network devices and servers to obtain information about their config, status, and even performance.
+SNMPv1: Only simple password authentication of clients and passed data as plain text
+SNMPv2: basic security and provided bulk transmission of monitoring data
+SNMPv3: utilizes both strong authentication and data encryption capabilities as well as more streamlined management system
+net-snmp package: securely monitor aspects of Linux server remotely</p>
+<h2 id="network-time-protocol-ntp">Network Time Protocol (NTP)</h2>
+<p>ntpd program synchronizes a Linux system with remote systems. synchronize with remote time standard server</p>
+<h2 id="network-information-system-nis">Network Information System (NIS)</h2>
+<p>NIS directory service that allows both clients and servers to share common naming name directory. NIS+ same, but more security
+nis-utils open source for implementing NIS+ directory</p>
+<h2 id="kerberos">Kerberos</h2>
+<p>Secure authentication protocol, securely authenticate users with a centralized server database</p>
+<h2 id="lightweight-directory-access-protocol-ldap">Lightweight Directory Access Protocol (LDAP)</h2>
+<p>Created to provide simple network authentication services to multiple applications and devices on a local network
+OpenLDAP: Hierachal database to store objects in network
+The Lightweight Directory Access Protocol (LDAP) provides access to directory services for authenticating users, workstations, and other network devices</p>
+<h2 id="certificate-authorities-ca">Certificate Authorities (CA)</h2>
+<p>OpenSSL provides standard certificate functions for server &amp; clients</p>
+<h2 id="secure-socket-shell-ssh">Secure Socket Shell (SSH)</h2>
+<p>Provides a layer for remote login and other secure network services over an insecure network</p>
+<h2 id="network-news-transfer-protocol-nntp">Network News Transfer Protocol (NNTP)</h2>
+<p>Distribution of news articles in a store-and-forward fashion across the internet</p>
+<h2 id="telnet">Telnet</h2>
+<p>Used when a user on one system logs in to another system on the internet. (The user must provide a valid user ID and password to log in to the remote system)</p>
+<h2 id="file-transfer-protocol-ftp">File Transfer Protocol (FTP)</h2>
+<p>Used to transfer files between computers on the internet.</p>
+<h2 id="trivial-file-transfer-protocool-tftp">Trivial File Transfer Protocool (TFTP)</h2>
+<p>Transferring files from one system to another (Typically used by X terminals and diskless workstations to download boot files from another)</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../VM_Server/" class="btn btn-neutral float-left" title="VM Server"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../vpnserver/" class="btn btn-neutral float-right" title="VPN Server">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../VM_Server/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../vpnserver/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

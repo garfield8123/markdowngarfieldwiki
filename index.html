@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Garfield's wiki</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Home Lab Network Topology";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> Garfield's wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Home Lab Network Topology</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#rasperry-pi-server">Rasperry pi Server</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#proxmox-hypervsior">Proxmox Hypervsior</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ubuntu-server-vm-machine-1">Ubuntu Server VM machine 1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#kali-linux-vm-machine-1">Kali Linux VM Machine 1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#windows-server-2022-vm-machine">Windows Server 2022 VM Machine</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#windows-10-vm-machine">Windows 10 VM Machine</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Hack</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="Hack/CTF_Resource/">CTF Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Hack/OSINT_Resource/">OSINT Resource</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Hack/Vulnerability_Resource/">Vulnerability Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Hack/common_command/">Common COmmands</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Hack/exploit_tools/">Exploit tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Hack/information_gathering/">Information gathering</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Linux</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >GeneralLinux</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="Linux/GeneralLinux/Linux_Boot_Methods/">Linux boot methods</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Linux/GeneralLinux/Linux_Commands/">Linux Commands</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Linux/GeneralLinux/Linux_Directory/">Linux Directory</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Linux/GeneralLinux/Linux_Network_Configuration_Files/">Linux Network Configuration Files</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Linux/GeneralLinux/Linux_OS_Setup/">Linux OS Setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Linux/GeneralLinux/Linux_Programming/">linux programming</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Linux/GeneralLinux/Linux_Scheduling/">Linux Scheduling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Linux/GeneralLinux/Linux_Security/">Linux security</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Linux/GeneralLinux/Linux_Shell_Scripting/">Linux shell scripting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Linux/GeneralLinux/Linux_User_Environment/">Linux User Environment</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Linux/GeneralLinux/VIM_Editor_Commands/">VIM editor commands</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Linux/GeneralLinux/kernel_parameters/">Kernel Parameters</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >LinuxServers</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="Linux/LinuxServers/Database_Servers/">Database Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Linux/LinuxServers/File_Servers/">File Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Linux/LinuxServers/Mail_Servers/">Mail Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Linux/LinuxServers/Printing_Server/">Install HP print</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Linux/LinuxServers/Web_Servers/">Webserver</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Networking</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="Networking/Mobile_Device_Management/">Mobile Device Management</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Networking/VM_Server/">VM Server</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Networking/ports_and_protocols/">Ports &amp; Protocols</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Networking/vpnserver/">VPN Server</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Security</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Concepts</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="Security/Concepts/cyber_kill_chain/">Cyber Kill Chain</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Security/Concepts/defensive_security/">Defensive Security</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Security/Concepts/goverance_and_regulation/">Goverance and Regulation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Security/Concepts/security_principles/">Security Principles</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >WebApplication</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="Security/Concepts/WebApplication/Web_Large_Language_Models/">Web Large Language Models</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Security/Concepts/WebApplication/Websocket/">Websocket</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Security/Concepts/WebApplication/api_testing/">API Testing</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Security/Concepts/WebApplication/path_traversal/">Path Traversal</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Security/Concepts/WebApplication/web_training/">Web Application Training (Port Swinger)</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Defense</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="Security/Defense/tshark/">Tshark</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Windows Server</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="Windows%20Server/Active_Directory/">Active Directory</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Windows%20Server/Configure_Microsoft_Entra_ID/">Configure Microsoft Entra ID</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Windows%20Server/Identity_Management/">Create, Configure, and manage identies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Windows%20Server/Microsoft_Entra_Identity/">Microsoft Entra Identity</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">Garfield's wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Home Lab Network Topology</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="home-lab-network-topology">Home Lab Network Topology</h1>
+<p><img alt="Home Lab Network Topology" src="images/homelabnetworkdiagram.png" /></p>
+<h2 id="rasperry-pi-server">Rasperry pi Server</h2>
+<ul>
+<li>/etc/dhcpcd.conf</li>
+</ul>
+<pre><code>interface eth0
+static ip_address=192.168.2.1/24
+#static routers=102.168.2.1
+metric = 200
+
+</code></pre>
+<ul>
+<li>iptables adding NAT routing for rasberrypi github script here</li>
+</ul>
+<h2 id="proxmox-hypervsior">Proxmox Hypervsior</h2>
+<ul>
+<li>Hypervisor machine with multiple VM templates and OS to easily to deploy when needed.</li>
+<li>Ability to easily test security concepts and replace vms with ready to deploy templates.</li>
+</ul>
+<h2 id="ubuntu-server-vm-machine-1">Ubuntu Server VM machine 1</h2>
+<ul>
+<li>Openvpn CloudConnexa vpn connection</li>
+<li>Allows ability to connect to homelab machines externally through public vpn domain hosted by openvpn</li>
+</ul>
+<h2 id="kali-linux-vm-machine-1">Kali Linux VM Machine 1</h2>
+<ul>
+<li>Sandbox machine to securely and confidently practice security concepts.</li>
+<li>Built with template to easily recreate base system to confidently practice security concepts.</li>
+</ul>
+<h2 id="windows-server-2022-vm-machine">Windows Server 2022 VM Machine</h2>
+<ul>
+<li>Hosts a custom windows active directory to host windows users and groups.</li>
+<li>Manage Windows Active Directory users and groups.</li>
+</ul>
+<h2 id="windows-10-vm-machine">Windows 10 VM Machine</h2>
+<ul>
+<li>Passthrough of Physical GPU to Windows VM</li>
+<li>Uses RDP to connect to machine</li>
+<li>Uses Moonlight to stream videogame/display content</li>
+<li>Device Manager showing Windows showing Physical GTX 950 graphics card</li>
+</ul>
+<pre><code>Memory Address 0x80000000-0x810FFFFF    PCI-to-PCI Bridge
+Memory Address 0x80000000-0x810FFFFF    NVIDIA GeForce GTX 950
+Memory Address 0x80000000-0x810FFFFF    PCI Express Root Complex
+
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="Hack/CTF_Resource/" class="btn btn-neutral float-right" title="CTF Resources">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+      <span><a href="Hack/CTF_Resource/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2026-02-22 05:51:26.540063+00:00
+-->
