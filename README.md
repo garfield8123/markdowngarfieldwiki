@@ -1,4 +1,4 @@
-# Markdown Wifi site
+# Markdown Wiki site
 
 ## Used with Mkdocs
 

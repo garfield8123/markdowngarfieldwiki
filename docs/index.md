@@ -1,5 +1,7 @@
 # Home Lab Network Topology
 
+![Home Lab Network Topology](../images/homelabnetworkdiagram.png)
+
 ## Rasperry pi Server
 
 -   /etc/dhcpcd.conf
