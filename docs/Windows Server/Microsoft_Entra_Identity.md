@@ -56,7 +56,7 @@ Zero trust Identity: protect assets anywhere with a central policy
 
 ## Zero Trust Architecture
 
-![zero trust Architecture](../../images/zero-trust-architecture.png)
+![zero trust Architecture](../images/zero-trust-architecture.png)
 
 ## Control Plane
 
@@ -194,7 +194,7 @@ DID implementations should use decentralized systems strictly to anchor identifi
 
 An Identity solution controls access to an organization's apps and data. Users, devices, and applications have identities. IAM components support the authentication and authorization of these and other identies. Process of autehntication controls who or what uses an account. Authorization controls what that user can do in applications (Microsoft Entra ID)
 
-![Basic Identity Architecture](../../images/identity-basic-architecture.png)
+![Basic Identity Architecture](../images/identity-basic-architecture.png)
 
 ## Microsoft Entra ID Terminology
 

@@ -19,7 +19,7 @@ GUI
 
 ### User Creation
 
-![active directory windows](../../images/activedirectorywindows.png)
+![active directory windows](../images/activedirectorywindows.png)
 
 * Created an additional user in window server
 * Created a user garfield within the windows server 2022 active directory
@@ -30,7 +30,7 @@ GUI
 
 ## Adding Active Directory to Proxmox
 
-![Proxmox realm](../../images/realmproxmox.png)
+![Proxmox realm](../images/realmproxmox.png)
 
 * Datacenter -> Realm -> Add -> Active Directory Server
 * Fill out realm title, Domain (garfield8123.com), srever (192.168.2.110)
@@ -38,7 +38,7 @@ GUI
 
 ## Adding Active Directory to Linux
 
-![Linux realm](../../images/RealmLinux.png)
+![Linux realm](../images/RealmLinux.png)
 
 ### Prerequiste installation
 

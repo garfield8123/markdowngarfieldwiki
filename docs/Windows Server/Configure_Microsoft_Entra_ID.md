@@ -4,7 +4,7 @@
 
 Adding custom brand requires Microsoft Entra ID premium P1, P2, or Office 365 (for Office 365 apps) license.
 
-![company brand](../../images/company-brand-entra-id.png)
+![company brand](../images/company-brand-entra-id.png)
 
 | Setting | Description |
 | --- | --- |
@@ -29,7 +29,7 @@ Microsoft’s cloud-based identity and access management service, which helps yo
 
 ## Microsoft Entra Roles
 
-![microsoft entra role permissions](../../images/micrsoft-entra-role-permission.png)
+![microsoft entra role permissions](../images/micrsoft-entra-role-permission.png)
 
 * Global Administrator Role permissions
 * Manage access to all administrative features in Microsoft Entra ID, and services that federate to Microsoft Entra ID
@@ -76,7 +76,7 @@ Azure roles and Microsoft Entra roles don't span Azure and Microsoft Entra ID. H
 * Assign a role using Privileged Identity Management (PIM)
 * If you have a Microsoft Entra ID Premium P2 license plan and already use PIM, all role management tasks are performed in the Privileged Identity Management experience. This feature is currently limited to assigning only one role at a time. You can't currently select multiple roles and assign them to a user all at once.
 
-![PIM management](../../images/privileged-identity-management-manages-roles.png)
+![PIM management](../images/privileged-identity-management-manages-roles.png)
 
 ## Administrative Unit
 
@@ -128,7 +128,7 @@ Azure roles and Microsoft Entra roles don't span Azure and Microsoft Entra ID. H
 
 ## Default permissions
 
-![user permissions](../../images/permissions-attribute-reader.png)
+![user permissions](../images/permissions-attribute-reader.png)
 
 User Settings and Roles and Administrations
 
@@ -198,7 +198,7 @@ User Settings and Roles and Administrations
 
 ## Configure external user properties
 
-![External user properties](../../images/external-user-settings-azure-active-directory.png)
+![External user properties](../images/external-user-settings-azure-active-directory.png)
 
 * Guest user access: Guest users can be given rights to where they operate almost as a full user, to restriction where they can only look at their own content.
 * Guest invite settings: Who can invite guests to join the organization; from guest themselves to only admins.
@@ -206,7 +206,7 @@ User Settings and Roles and Administrations
 
 ## Configure tenant properties
 
-![Tenant user properties](../../images/tenant-properties-azure-active-directory.png)
+![Tenant user properties](../images/tenant-properties-azure-active-directory.png)
 
 * Name: friendly name for your tenant, for use in the Azure portal
 * Country or region: location of your primary company and the Azure datacenters being used

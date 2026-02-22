@@ -123,17 +123,17 @@ PCI DSS is focused on maintaining secure card transactions and protecting agains
 
 Security and Privacy Controls for Information Systems and Organisations, developed by the National Institute of Standards and Technology (NIST), US, that provides a catalogue of security controls to protect the CIA triad of information systems.
 
-![NIST 80053](../../images/NIST80053security.png)
+![NIST 80053](../images/NIST80053security.png)
 
 NIST 800-53 offers a comprehensive set of security and privacy controls that organisations can use to safeguard their operations, assets, personnel, and other organisations from various threats and risks. These include intentional attacks, unintentional errors, natural disasters, infrastructure failures, foreign intelligence activity, and privacy concerns. NIST 800-53 Revision 5 organises security controls into twenty families, each addressing a specific security concern category. You can learn more about the controls [document here](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf)
 
-![program management](../../images/programmanagementNIST80053.png)
+![program management](../images/programmanagementNIST80053.png)
 
 Among all the families, "Program Management" is one of the crucial control of the NIST 800-53 framework. Program Management control mandates establishing, implementing, and monitoring organisation-wide programs for information security and privacy while safeguarding the processed, stored, or transmitted through systems
 
 ### Compliance best practices
 
-![NIST Policies](../../images/NIST80053policies.png)
+![NIST Policies](../images/NIST80053policies.png)
 businesses must conduct a thorough discovery process to recognise and catalogue their data assets, information systems, and associated threats. This includes understanding data flows, system dependencies, and potential vulnerabilities
 The NIST 800-53 control families must be mapped to the identified assets and hazards, making creating a structured approach for matching the controls to the organisation's demands easier. Thirdly, creating a governance structure, allocating duties, and outlining precise controls implementation and maintenance procedures are all necessary to effectively manage the implementation process. All measures must be regularly monitored and evaluated to ensure compliance. Finally, organisations should establish effective monitoring systems to identify and address security issues, conduct routine evaluations and audits, and improve control implementation. By adhering to these best practices, organisations can successfully implement NIST 800-53 and enhance their security outlook while mitigating risks effectively.
 
@@ -178,7 +178,7 @@ SOC 2 framework is essential for service providers interacting with client data 
 
 primary purpose of the SOC 2 audit is to ensure that third-party service providers store and process sensitive information securely.
 
-![SOC2 Components](../../images/SOC2%20components.png)
+![SOC2 Components](../images/SOC2%20components.png)
 
 * Planning SOC Audit
 * Determine the scope: This may include specific systems, processes, or locations that are relevant to the security and privacy of customer data.
